@@ -1,0 +1,25 @@
+package com.demo.miaoshademo.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.Date;
+
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class MiaoshaUser {
+
+    private Long id;
+    private String nickname;
+    private String password;
+    private String salt;
+    private String head;
+    private Date registerDate;
+    private Date lastLoginDate;
+    private Integer loginCount;
+
+}
